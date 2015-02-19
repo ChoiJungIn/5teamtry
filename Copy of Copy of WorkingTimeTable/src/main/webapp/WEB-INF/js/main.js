@@ -18,8 +18,8 @@ jQuery(function($) {
 	});
 
 	//portfolio
-/*	$(window).load(function(){
-		$portfolio_selectors = $('.portfolio-filter >li>a');
+	$(window).load(function(){
+		$portfolio_selectors = $('.portfoㅇlio-filter >li>a');
 		if($portfolio_selectors!='undefined'){
 			$portfolio = $('.portfolio-items');
 			$portfolio.isotope({
@@ -35,7 +35,7 @@ jQuery(function($) {
 			});
 		}
 	});
-*/
+
 	//contact form
 	var form = $('.contact-form');
 	form.submit(function () {
