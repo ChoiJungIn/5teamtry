@@ -91,7 +91,7 @@
 							
 							<!-- MY PAGE 버튼 -->
 							<li class="dropdown">
-                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Page<i class="icon-angle-down"></i></a>
+                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Page <i class="fa fa-angle-down"></i></a>
                         		<ul class="dropdown-menu">
                     				<li><a href="<%=request.getContextPath()%>/mypage_employer">Modify Account</a></li>
                     				<li><a href="<%=request.getContextPath()%>/modifyEmployerPass">Change Password</a></li>
@@ -106,7 +106,7 @@
                    		 	
                    		 	<!-- 근무표 버튼 -->
                    		 	<li class="dropdown">
-                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shift Table<i class="icon-angle-down"></i></a>
+                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shift Table <i class="fa fa-angle-down"></i></a>
                         		<ul class="dropdown-menu">
                     				<li><a href="<%=request.getContextPath()%>/registerSchedule">Register Shift</a></li>
                        				<li><a href="<%=request.getContextPath()%>/modifySchedule">Modify Shift</a></li>
@@ -116,7 +116,7 @@
                    		 	
                    		 	<!-- 게시판 버튼 -->
                    		 	<li class="dropdown">
-                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Board<i class="icon-angle-down"></i></a>
+                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Board <i class="fa fa-angle-down"></i></a>
                         		<ul class="dropdown-menu">
                     				<li><a href="<%=request.getContextPath()%>/notice">Notice Board</a></li>
                        				<li><a href="<%=request.getContextPath()%>/free">Free Board</a></li>
@@ -141,7 +141,7 @@
 							
 							<!-- MY PAGE 버튼 -->
 							<li class="dropdown">
-                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Page<i class="icon-angle-down"></i></a>
+                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Page <i class="fa fa-angle-down"></i></a>
                         		<ul class="dropdown-menu">
                     				<li><a href="<%=request.getContextPath()%>/mypage_employee">Modify Account</a></li>
                     				<li><a href="<%=request.getContextPath()%>/modifyEmployeePass">Change Password</a></li>
@@ -155,7 +155,7 @@
 
 							<!-- 근무표 버튼 -->
                    		 	<li class="dropdown">
-                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shift Table<i class="icon-angle-down"></i></a>
+                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shift Table <i class="fa fa-angle-down"></i></a>
                         		<ul class="dropdown-menu">
                     				<li><a href="<%=request.getContextPath()%>/mySchedule">My Shift</a></li>
                         		</ul>
@@ -163,7 +163,7 @@
                    		 	
                    		 	<!-- 게시판 버튼 -->
                    		 	<li class="dropdown">
-                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Board<i class="icon-angle-down"></i></a>
+                    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Board <i class="fa fa-angle-down"></i></a>
                         		<ul class="dropdown-menu">
                     				<li><a href="<%=request.getContextPath()%>/notice">Notice Board</a></li>
                        				<li><a href="<%=request.getContextPath()%>/free">Free Board</a></li>
