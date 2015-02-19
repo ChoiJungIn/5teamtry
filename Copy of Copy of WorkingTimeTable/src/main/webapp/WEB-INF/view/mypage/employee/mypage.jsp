@@ -42,8 +42,9 @@
     
     
    	<!-- ======================contents====================== -->
+   	<div id="hello">
    	자<br>유<br>게<br>시<br>판
-    
+    </div>
     
     <!-- ======================footer====================== -->
     <jsp:include page="/WEB-INF/view/main/footer.jsp" />

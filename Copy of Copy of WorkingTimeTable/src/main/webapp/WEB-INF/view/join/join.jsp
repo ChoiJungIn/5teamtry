@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
-	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-	<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-	<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+	
+<head>
 	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -52,7 +52,7 @@ label.error {
 <script type="text/javascript" src="lib/jquery.validate.min.js"></script>
 
 
-	<!--------------------- DatePicker --------------------->
+<!--------------------- DatePicker --------------------->
 
 <link rel="stylesheet"
 	href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
@@ -63,29 +63,19 @@ label.error {
 	$(document).ready(function() {
 
 		var dp = {
-
 				changeMonth : true,
-
 				changeYear : true,
-
 				yearRange : "1930:2015"
-
 			};
-
 			$("#datepicker").datepicker(dp);
 
 		
 
 		$("#popUpBtn").click(function(){
-
 			alert("팝업창이 나올 것!!");
-
 					var url = "<%=request.getContextPath()%>/checkIdPopUp"; 
-
 					<%-- var url = "<%=request.getContextPath() %>/checkId?userId="+$("#userId").val(); --%>
-
 					window.open(url, "_blank", "width=450, height=200, toolbar=no, menubar=no, resizable=no");
-
 		});
 
  
@@ -257,81 +247,90 @@ label.error {
     
     
    	<!-- ======================contents====================== -->
-   회원가입<br> <br> <br>
-   <div class="main zerogrid">
-					<c:url value="/join" var="url" />
-					<form id="joinForm" action="${url }" method="post">
-
-						<table class="table" style="border-collapse: seperate;">
-							<colgroup>
-								<col style="align: center;" />
-							</colgroup>
-							<tbody>
-								<tr>
-									<th><label>아이디</label></th>
-									<td><input type="text" name="fromId" id="formId" disabled />
-										<input type="hidden" name="userId" id="userId" value="" /> <!-- <input type ="button" id="popUpBtn" value="중복확인"/> -->
-										<!-- <button id="popUpBtn">중복확인</button> --> <input
-										type="button" id="popUpBtn" value="중복확인" /> <input
-										type="hidden" name="buttonCheck" id="buttonCheck" value="" />
-									</td>
-								</tr>
-								<tr>
-									<th><label>비밀번호</label></th>
-									<td><input type="password" name="password" id="password"
-										value="" /></td>
-								</tr>
-								<tr>
-									<th><label>비밀번호 확인</label></th>
-									<td><input type="password" name="password2" id="password2"
-										value="" /></td>
-								</tr>
-								<tr>
-									<th><label>이름</label></th>
-									<td><input type="text" name="userName" id="userName"
-										value="" /></td>
-								</tr>
-								<tr>
-									<th><label>H.P</label></th>
-									<td><input type="text" name="tel" id="tel" value="" /></td>
-								</tr>
-								<tr>
-									<th><label>이메일</label></th>
-									<td><input type="text" name="email" id="email" value="" /></td>
-								</tr>
-								<tr>
-									<th><label>생년월일</label></th>
-									<td><input type="text" id="datepicker" name="birth"
-										value="" /></td>
-								</tr>
-								<tr>
-									<!-- <fieldset id = "user_grade"> -->
-									<th><label>가입유형</label></th>
-
-									<td><input type="radio" id="grade_employer" value="사장"
-										name="grade" required>고용인 <input type="radio"
-										id="grade_employer" value="직원" name="grade">아르바이트 <label
-										for="grade" class="error"></label></td>
-									<!-- </fieldset> -->
-								</tr>
-								<tr>
-									<th><label for="question">비번찾기질문</label></th>
-									<td><input id="question" name="question" type="text"
-										size="50"></td>
-								</tr>
-								<tr>
-									<th><label for="answer">답</label></th>
-									<td><input id="answer" name="answer" type="text"></td>
-								</tr>
-
-							</tbody>
-						</table>
-						<div align="center" style="margin-bottom: 50px; margin-top: 30px;">
-							<button type="submit">등록</button>
-							<button type="reset" id="cancel">취소</button>
-						</div>
-					</form>
-</div>
+   <section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="center gap">
+						<h2>Join us !!</h2>
+						<c:url value="/join" var="url" />
+						<form id="joinForm" action="${url }" method="post">
+ 
+							<table class="table" style="border-collapse: seperate;">
+								<colgroup>
+									<col style="align: center;" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th><label>아이디</label></th>
+										<td><input type="text" name="fromId" id="formId" disabled />
+											<input type="hidden" name="userId" id="userId" value="" /> <!-- <input type ="button" id="popUpBtn" value="중복확인"/> -->
+											<!-- <button id="popUpBtn">중복확인</button> --> <input
+											type="button" id="popUpBtn" value="중복확인" /> <input
+											type="hidden" name="buttonCheck" id="buttonCheck" value="" />
+										</td>
+									</tr>
+									<tr>
+										<th><label>비밀번호</label></th>
+										<td><input type="password" name="password" id="password"
+											value="" /></td>
+									</tr>
+									<tr>
+										<th><label>비밀번호 확인</label></th>
+										<td><input type="password" name="password2"
+											id="password2" value="" /></td>
+									</tr>
+									<tr>
+										<th><label>이름</label></th>
+										<td><input type="text" name="userName" id="userName"
+											value="" /></td>
+									</tr>
+									<tr>
+										<th><label>H.P</label></th>
+										<td><input type="text" name="tel" id="tel" value="" /></td>
+									</tr>
+									<tr>
+										<th><label>이메일</label></th>
+										<td><input type="text" name="email" id="email" value="" /></td>
+									</tr>
+									<tr>
+										<th><label>생년월일</label></th>
+										<td><input type="text" id="datepicker" name="birth"
+											value="" /></td>
+									</tr>
+									<tr>
+										<!-- <fieldset id = "user_grade"> -->
+										<th><label>가입유형</label></th>
+ 
+										<td><input type="radio" id="grade_employer" value="사장"
+											name="grade" required>고용인 <input type="radio"
+											id="grade_employer" value="직원" name="grade">아르바이트 <label
+											for="grade" class="error"></label></td>
+										<!-- </fieldset> -->
+									</tr>
+									<tr>
+										<th><label for="question">비번찾기질문</label></th>
+										<td><input id="question" name="question" type="text"
+											size="50"></td>
+									</tr>
+									<tr>
+										<th><label for="answer">답</label></th>
+										<td><input id="answer" name="answer" type="text"></td>
+									</tr>
+ 
+								</tbody>
+							</table>
+							<div align="center"
+								style="margin-bottom: 50px; margin-top: 30px;">
+								<button type="submit">등록</button>
+								<button type="reset" id="cancel">취소</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			</div>
+			</section>
     
     <!-- ======================footer====================== -->
     <jsp:include page="/WEB-INF/view/main/footer.jsp" />
